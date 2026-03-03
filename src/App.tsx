@@ -272,7 +272,7 @@ export default function FantasyNameGen() {
         {/* Header */}
         <div style={{ textAlign: "center", marginBottom: "2.5rem" }}>
           <div style={{ fontSize: "0.7rem", letterSpacing: "0.4em", color: "#7a5c3a", textTransform: "uppercase", marginBottom: "0.75rem" }}>
-            ✦ Arcane Nomenclature Engine ✦
+            ✦ An Alchemic Nomenclature Engine ✦
           </div>
           <h1 style={{
             fontFamily: "'Trajan Pro', 'Times New Roman', Times, serif",
@@ -487,7 +487,7 @@ export default function FantasyNameGen() {
 
         {/* Footer */}
         <div style={{ textAlign: "center", marginTop: "2rem", fontSize: "0.68rem", color: "#3a2a1a", letterSpacing: "0.15em" }}>
-          ENGINE BASED ON RINKWORKS FANTASY NAME GENERATOR
+          ENGINE BASED ON <a className="underline" href="http://rinkworks.com/namegen/" target="_blank">RINKWORKS FANTASY NAME GENERATOR</a>
         </div>
       </div>
     </div>
