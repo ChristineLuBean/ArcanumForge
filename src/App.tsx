@@ -390,7 +390,7 @@ export default function FantasyNameGen() {
                 padding: "0.4rem 0.6rem", background: "#0d0b0f", border: "1px solid #3a2a1a",
                 borderRadius: 4, color: "#c8b89a", fontSize: "0.85rem", fontFamily: "inherit", cursor: "pointer",
               }}>
-                {[10, 20, 50 ,100].map(n => <option key={n} value={n}>{n}</option>)}
+                {[12, 24, 48, 100].map(n => <option key={n} value={n}>{n}</option>)}
               </select>
             </div>
 
