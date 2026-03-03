@@ -2,7 +2,6 @@ import { useState, useCallback } from "react";
 
 // ─── RinkWorks Engine ────────────────────────────────────────────────────────
 
-const VOWELS: string[] = ["a", "e", "i", "o", "u"];
 const SINGLE_VOWELS: string = "aeiou";
 
 // Weighted consonants (more common = more weight)
@@ -63,28 +62,6 @@ function genStupidSyllable(): string { return randomFrom(STUPID_SYLLABLES); }
 // Parse and execute a template
 function parseTemplate(template: string): string {
   let pos = 0;
-
-  function parseExpr(): string[] {
-    const results: string[] = [];
-    while (pos < template.length) {
-      const ch = template[pos];
-      if (ch === ')' || ch === '>') break;
-      if (ch === '|') { return results; }
-      if (ch === '(') {
-        pos++;
-        const options = parseLiteral();
-        results.push(randomFrom(options));
-      } else if (ch === '<') {
-        pos++;
-        const options = parseAngle();
-        results.push(randomFrom(options));
-      } else {
-        results.push(evalCode(ch));
-        pos++;
-      }
-    }
-    return results;
-  }
 
   function parseLiteral(): string[] {
     // inside ( ), collect | separated literal options
