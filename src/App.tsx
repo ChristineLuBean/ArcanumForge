@@ -944,7 +944,7 @@ export default function FantasyNameGen() {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="absolute flex flex-col items-center max-w-180 w-full px-3 md:px-0 pb-8"
+            className="absolute flex flex-col items-center max-w-180 w-full px-3 md:px-0 pb-8 cursor-default"
           >
             {/* Close button*/}
             <div
