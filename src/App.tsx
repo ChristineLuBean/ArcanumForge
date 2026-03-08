@@ -881,7 +881,7 @@ export default function FantasyNameGen() {
   const [error, setError] = useState<string>("");
   const [copied, setCopied] = useState<string | null>(null);
   const [generating, setGenerating] = useState<boolean>(false);
-  const [guideModal, setGuideModal] = useState<boolean>(true);
+  const [guideModal, setGuideModal] = useState<boolean>(false);
   const [activeCode, setActiveCode] = useState<string | null>(null);
   const [activeEx, setActiveEx] = useState<number | null>(null);
 
