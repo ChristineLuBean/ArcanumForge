@@ -1,1 +1,127 @@
 @import "tailwindcss";
+
+@theme {
+  --color-bastille-50: #f4f1fc;
+  --color-bastille-100: #ece6f9;
+  --color-bastille-200: #dcd2f3;
+  --color-bastille-300: #c8b7ea;
+  --color-bastille-400: #b699e0;
+  --color-bastille-500: #a980d4;
+  --color-bastille-600: #9c66c5;
+  --color-bastille-700: #8856ac;
+  --color-bastille-800: #6e478c;
+  --color-bastille-900: #5a3f70;
+  --color-bastille-950: #1a1220;
+
+  --color-beaver-50: #f5f3f1;
+  --color-beaver-100: #e6e1db;
+  --color-beaver-200: #cfc4b9;
+  --color-beaver-300: #b3a191;
+  --color-beaver-400: #9e8471;
+  --color-beaver-500: #8a7060;
+  --color-beaver-600: #7a6054;
+  --color-beaver-700: #634c45;
+  --color-beaver-800: #55413e;
+  --color-beaver-900: #4b3a38;
+  --color-beaver-950: #2a1e1e;
+
+  --color-black-russian-50: #f5f0fd;
+  --color-black-russian-100: #ede4fb;
+  --color-black-russian-200: #e0cef7;
+  --color-black-russian-300: #ceb0f1;
+  --color-black-russian-400: #bf91e8;
+  --color-black-russian-500: #b576de;
+  --color-black-russian-600: #aa5bd0;
+  --color-black-russian-700: #964bb7;
+  --color-black-russian-800: #793f94;
+  --color-black-russian-900: #613976;
+  --color-black-russian-950: #1a0f1f;
+
+  --color-bleached-cedar-50: #f4f2fb;
+  --color-bleached-cedar-100: #eae7f8;
+  --color-bleached-cedar-200: #dbd3f2;
+  --color-bleached-cedar-300: #c4b8e9;
+  --color-bleached-cedar-400: #b19bde;
+  --color-bleached-cedar-500: #a382d2;
+  --color-bleached-cedar-600: #9569c2;
+  --color-bleached-cedar-700: #8258aa;
+  --color-bleached-cedar-800: #69498a;
+  --color-bleached-cedar-900: #57406f;
+  --color-bleached-cedar-950: #2a1f35;
+
+  --color-indian-khaki-50: #f9f7f3;
+  --color-indian-khaki-100: #f0ede4;
+  --color-indian-khaki-200: #e1d9c7;
+  --color-indian-khaki-300: #c8b89a;
+  --color-indian-khaki-400: #b8a17f;
+  --color-indian-khaki-500: #aa8b65;
+  --color-indian-khaki-600: #9d7a59;
+  --color-indian-khaki-700: #83634b;
+  --color-indian-khaki-800: #6b5241;
+  --color-indian-khaki-900: #574437;
+  --color-indian-khaki-950: #2e231c;
+
+  --color-judge-gray-50: #f6f5f0;
+  --color-judge-gray-100: #e8e7d9;
+  --color-judge-gray-200: #d3cfb5;
+  --color-judge-gray-300: #bab28a;
+  --color-judge-gray-400: #a69869;
+  --color-judge-gray-500: #97865b;
+  --color-judge-gray-600: #816e4d;
+  --color-judge-gray-700: #69573f;
+  --color-judge-gray-800: #5a4a3a;
+  --color-judge-gray-900: #4e4035;
+  --color-judge-gray-950: #2c231c;
+
+  --color-raffia-50: #fbf8f1;
+  --color-raffia-100: #f6efde;
+  --color-raffia-200: #e8d5b0;
+  --color-raffia-300: #dfc392;
+  --color-raffia-400: #d1a366;
+  --color-raffia-500: #c78c48;
+  --color-raffia-600: #b9773d;
+  --color-raffia-700: #9a5f34;
+  --color-raffia-800: #7c4d30;
+  --color-raffia-900: #654029;
+  --color-raffia-950: #361f14;
+
+  --color-sandstone-50: #f5f3f1;
+  --color-sandstone-100: #e5e2dc;
+  --color-sandstone-200: #cdc8bb;
+  --color-sandstone-300: #b0a794;
+  --color-sandstone-400: #998c76;
+  --color-sandstone-500: #8b7c67;
+  --color-sandstone-600: #7a6a5a;
+  --color-sandstone-700: #605248;
+  --color-sandstone-800: #534740;
+  --color-sandstone-900: #493e3a;
+  --color-sandstone-950: #29211f;
+
+  --color-tobacco-brown-50: #f7f6ef;
+  --color-tobacco-brown-100: #ece9d5;
+  --color-tobacco-brown-200: #dad2ae;
+  --color-tobacco-brown-300: #c5b67f;
+  --color-tobacco-brown-400: #b49d5b;
+  --color-tobacco-brown-500: #a58a4d;
+  --color-tobacco-brown-600: #8d7041;
+  --color-tobacco-brown-700: #7a5c3a;
+  --color-tobacco-brown-800: #614832;
+  --color-tobacco-brown-900: #543f2f;
+  --color-tobacco-brown-950: #302118;
+
+  --color-woodsmoke-50: #f7f6f9;
+  --color-woodsmoke-100: #efecf2;
+  --color-woodsmoke-200: #dad5e2;
+  --color-woodsmoke-300: #bbb0c9;
+  --color-woodsmoke-400: #9586aa;
+  --color-woodsmoke-500: #786790;
+  --color-woodsmoke-600: #625277;
+  --color-woodsmoke-700: #514361;
+  --color-woodsmoke-800: #443a52;
+  --color-woodsmoke-900: #3d3446;
+  --color-woodsmoke-950: #0d0b0f;
+
+  --font-serif: "'Palatino Linotype', 'Book Antiqua', Palatino, serif";
+  --font-mono: "'Courier New', monospace";
+  --font-trajan-pro: "'Trajan Pro', 'Times New Roman', Times, serif";
+}
